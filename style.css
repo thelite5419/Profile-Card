@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: #495057;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+.container{
+    height: 400px;
+    width: 300px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 15px;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .image{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.container .image .profile_image{
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 15px #00000074, 0px 5px 30px #0000002c;
+}
+
+.container .role{
+    color: #ced4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .role .name{
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.container .role .title{
+    font-size: 12px;
+}
+
+.container .contacts {
+    padding: 20px 25px 15px 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 22px;
+}
+
+.container .contacts #icon{
+    height: 37px;
+    width: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.100 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.150);
+    transition: all ease-in-out 0.2s;
+}
+
+.container .contacts a{
+    text-decoration: none;
+    color: #adb5bd;
+    font-size: 19px;
+}
+
+.container .skills{
+    height: auto;
+    width: 100%;
+    color: #adb5bd;
+    padding : 5px 25px;
+}
+
+.container .skills .skills_text{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.container .skills .scroll{
+    display: flex;
+    font-size: 13px;
+    margin-top: 10px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    -ms-overflow-style: none;
+}
+
+.container .skills .scroll .scroll_style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    padding: 5px 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.500);
+    white-space: nowrap;
+    scroll-snap-align: start;
+    transition: all ease-in-out 0.5s;
+}
+
+.container .skills .scroll .scroll_style:hover{
+    color: #14213d;
+    box-shadow: inset 0px -100px #edf6f9;
+}
+
+.container .skills .skills_text:hover {
+    text-decoration: underline;
+}
+
+.container .contacts #icon:hover{
+    transform: scale(1.1);
+    background: rgba( 255, 255, 255, 0.200 );
+}
